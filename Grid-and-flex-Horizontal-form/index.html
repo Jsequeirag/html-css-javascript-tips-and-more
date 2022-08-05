@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+            padding: 10px;
+        }
+
+        .grid-item {
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .dark-row {
+            background-color: gray;
+        }
+
+
+
+        @media only screen and (max-width: 900px) {
+            .grid {
+                display: flex;
+                flex-wrap: wrap;
+
+            }
+
+            .empty-field {
+                display: none
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="">
+        <div class="grid ">
+            <div class="grid-item dark-row"><label for="nombre">Comisión de formalización:</label></div>
+            <div class="grid-item dark-row"><label for="nombre">3.00%</label></div>
+            <div class="grid-item dark-row"><label for="nombre">15000</label></div>
+            <div class="grid-item dark-row"><label for="nombre">Total a financiar:</label></div>
+            <div class="grid-item dark-row"><label for="nombre">15 000</label></div>
+        </div>
+        <div class="grid 2-row">
+            <div class="grid-item"><label for="nombre">Prima:</label></div>
+            <div class="grid-item"><label for="nombre">5%</label></div>
+            <div class="grid-item"><label for="nombre">25.750</label></div>
+            <div class="grid-item"><label for="nombre">0.00</label></div>
+            <div class="grid-item empty-field"><label for="nombre"></label></div>
+        </div>
+        <div class="grid 1-row">
+            <div class="grid-item dark-row"><label for="nombre">Saldo a financiar:</label></div>
+            <div class="grid-item dark-row empty-field"><label for="nombre"></label></div>
+            <div class="grid-item dark-row"><label for="nombre">15000</label></div>
+            <div class="grid-item dark-row empty-field"><label for="nombre"></label></div>
+            <div class="grid-item dark-row empty-field"><label for="nombre"></label></div>
+        </div>
+        <div class="grid 2-row">
+            <div class="grid-item"><label for="nombre">Tasa de interes Mensual:</label></div>
+            <div class="grid-item"><label for="nombre">3.25%</label></div>
+            <div class="grid-item"><label for="nombre">plazo en meses</label></div>
+            <div class="grid-item"><label for="nombre">36.00</label></div>
+            <div class="grid-item empty-field"><label for="nombre"></label></div>
+        </div>
+        <div class="grid 1-row">
+            <div class="grid-item dark-row"><label for="nombre">Cuota Mensual</label></div>
+            <div class="grid-item dark-row"><label for="nombre">23,253.23</label></div>
+            <div class="grid-item dark-row"><label for="nombre">Póliza de Desempleo</label></div>
+            <div class="grid-item dark-row"><label for="nombre">897.77</label></div>
+            <div class="grid-item dark-row empty-field"><label for="nombre"></label></div>
+        </div>
+        <div class="grid 2-row">
+            <div class="grid-item"><label for="nombre">Cuota Mensual</label></div>
+            <div class="grid-item"><label for="nombre">23,253.23</label></div>
+            <div class="grid-item"><label for="nombre">Póliza de Desempleo</label></div>
+            <div class="grid-item"><label for="nombre">897.77</label></div>
+            <div class="grid-item empty-field"><label for="nombre"></label></div>
+        </div>
+    </div>
+</body>
+
+</html>
